@@ -36,3 +36,30 @@ assert torch.all(z1 == z2) # all the elements in both tensors are equal
 print('Squeeze:\n', x.shape, z1.shape)
 print(z1.shape)
 print(z2.shape)
+
+z = torch.randint(low=0, high=10, size=(2,3))
+print(z)
+
+
+
+x = torch.rand(2,2,2);
+print (x);
+print(x.max())
+print(x.max(dim=0))
+
+print("--")
+x = torch.arange(25).reshape(5, 5)
+print(x)
+
+
+x = torch.tensor([[2., -1.], [1., 1.]], requires_grad=True)
+y = torch.tensor([[2., -1.], [1., 1.]])
+print(x)
+print(y)
+
+out = x.pow(2).sum()
+print(out)
+out.backward()
+
+print(x)
+print(out)
