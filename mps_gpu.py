@@ -1,3 +1,9 @@
+# https://pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac/
+# https://towardsdatascience.com/installing-pytorch-on-apple-m1-chip-with-gpu-acceleration-3351dc44d67c
+# https://pytorch.org/docs/stable/notes/mps.html
+# https://bio-info.tistory.com/184
+
+
 import torch
 x = torch.rand(1, 300)
 y = torch.rand(300, 200)
@@ -20,3 +26,4 @@ else:
     z=(x@y)
 
     print(z)
+
